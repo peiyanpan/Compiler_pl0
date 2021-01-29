@@ -1,0 +1,13 @@
+program   hhh;
+	const a:=10, b:= 2020,f:=200;
+	var c,d,e;
+	procedure func( x,y,z );
+		begin
+			c:=x;
+			d:=y;
+			e:=z
+		end
+	begin
+		call func(a,b,f);
+		write(c,d,e)
+	end

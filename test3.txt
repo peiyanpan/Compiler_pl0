@@ -1,0 +1,68 @@
+program wyw;
+const a:=20,b:=10;
+var c,d,e,flag;
+	procedure wywnb(x);
+		var sum;
+		begin
+			sum:=0;
+			while x>=0 do
+			begin
+				if odd x then
+					sum:=sum+x
+				else
+					sum:=sum-x;
+				x:=x-1
+			end;
+			flag:=sum
+		end;
+	procedure wywnb2(x1);
+		var sum1;
+		begin
+			sum1:=0;
+			while x1>=0 do
+			begin
+				if odd x1 then
+					sum1:=sum1+x1
+				else
+					sum1:=sum1-x1;
+				x1:=x1-1
+			end;
+			flag:=sum1
+		end
+procedure wyw2(q);
+	procedure wyw3(p);
+		procedure wyw7(o);
+			procedure wyw5(r);
+			begin
+				call wywnb(r)
+			end
+		begin
+			call wyw5(o)
+		end
+	begin
+		call wyw7(p)
+	end;
+	procedure wyw6(l);
+		procedure wyw7(s);
+		begin
+			if s=e then
+			begin
+				call wyw3(s)
+			end;
+			if s<e then
+			begin
+				call wyw6(s+1)
+			end
+		end
+	begin
+		call wyw7(l)	
+	end
+begin
+	call wyw6(q)
+end
+begin
+	read(c);
+	e:=c+2;
+	call wyw2(c);
+	write(flag)
+end
